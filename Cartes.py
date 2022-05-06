@@ -1,6 +1,3 @@
-from re import S
-
-
 class Cartes:
     def __init__(self, name, mana, description, cout, effet):
         self._name = "card"
@@ -31,7 +28,7 @@ class Blast(Cartes):
         self.defausse = defausse
         
 class Mage:
-   def __init__(self, PV, manatot, manaactu, main, defausse, zone, manaregen, attaque, cout): 
+   def __init__(self, PV, manatot, manaactu, main, defausse, zone, manaregen, attaque, cout, tour): 
        self.PV = PV
        self.manatot = manatot
        self.manaactu = manaactu
@@ -41,3 +38,8 @@ class Mage:
        self.manaregen = manaregen
        self.attaque = attaque
        self.cout = cout
+       self.tour = tour
+def playcard():
+    
+def regenmana():
+        
