@@ -8,10 +8,16 @@ class Cartes:
         
         
 class Cristal(Cartes):
-    def __init__(self, valeur, cout, gainmana):
+    def __init__(self, valeur, cout, gain):
         self._valeur = valeur
         self._cout = cout
-        self._gainmana = gainmana
+        self._managain = gainmana
+        
+        def gainmana(self, manatot, manaactu):
+            manatot+=1
+            manaactu+=self._managain
+            return manatot, manaactu #regenere et augmente de 1 la reserve de mana
+            
         
 class Creature(Cartes):
     def __init__(self, PV, degats, cout, contre, mort):
@@ -20,6 +26,9 @@ class Creature(Cartes):
         self.cout = cout
         self.contre = contre 
         self.mort = mort
+        
+        def infligedegats(self, ciblepv, cibledefense):
+            
         
 class Blast(Cartes):
     def __init__(self, valeur, defausse):
@@ -30,7 +39,7 @@ class Blast(Cartes):
 class Mage:
    def __init__(self, PV, manatot, manaactu, main, defausse, zone, manaregen, attaque, cout, tour): 
        self.PV = PV
-       self.manatot = manatot
+       self.manatot = manatot #mana maximal du joueur avec les cristaux, il augmente de 1 à chaque tour
        self.manaactu = manaactu
        self.main = main
        self.defausse = defausse
@@ -40,6 +49,10 @@ class Mage:
        self.cout = cout
        self.tour = tour
 def playcard():
-    
-def regenmana():
-        
+    return "card"
+def manaregen():
+    return manaregen
+        #regeneration à chaque tour
+
+def posecreature():
+    #pose une creature puis amorce l'offensive
