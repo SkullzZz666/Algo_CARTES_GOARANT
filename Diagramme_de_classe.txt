@@ -11,6 +11,7 @@ Fonction
     CRISTAL:
     Valeur
     Coût en Mana
+
         Ajoute du mana au joueur
         Reste sur la zone de jeu
 
@@ -28,7 +29,8 @@ Fonction
     BLAST:
     Valeur
     Attaque
-    Mort
+    Défausse
+
         inflige des dégâts définis
         Défausser après utilisation
 
