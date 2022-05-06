@@ -1,0 +1,54 @@
+Diagramme de classe: 
+CARTE:
+
+Mana
+Nom
+Description
+Coût en mana
+Effet
+Fonction
+
+    CRISTAL:
+    Valeur
+    Coût en Mana
+        Ajoute du mana au joueur
+        Reste sur la zone de jeu
+
+    CREATURE:
+
+    Points de vie
+    Score Attaque
+    Coût en Mana
+    Contre-Attaque
+    Mort
+
+        Action
+        Effet supplémentaire
+
+    BLAST:
+    Valeur
+    Attaque
+    Mort
+        inflige des dégâts définis
+        Défausser après utilisation
+
+
+MAGE(PLAYER):
+
+Nom
+Points de vie
+Total Mana
+Mana Actuel
+Main
+Défausse
+Zone de jeu
+Regen Mana
+Attaque
+Coût Mana
+    Jouer une CARTE
+    Utiliser une CREATURE
+
+
+
+
+
